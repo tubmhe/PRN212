@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ProjectQuanTM
 {
     /// <summary>
-    /// Interaction logic for ManagerRoom.xaml
+    /// Interaction logic for RoomManager.xaml
     /// </summary>
-    public partial class ManagerRoom : Window
+    public partial class RoomManager : Window
     {
-        public ManagerRoom()
+        public RoomManager()
         {
             InitializeComponent();
         }

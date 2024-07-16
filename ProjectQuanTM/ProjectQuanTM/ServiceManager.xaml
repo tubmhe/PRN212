@@ -115,7 +115,7 @@
         <Grid Background="#FFB8C0C4">
 
             <ListView x:Name="lvCus1"
-                Margin="125,65,132,310" BorderBrush="#89FFFFFF" Background="White">
+                Margin="79,70,178,305" BorderBrush="#89FFFFFF" Background="White">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Tên"
@@ -143,36 +143,36 @@
                     </GridView>
                 </ListView.View>
             </ListView>
-            <TextBox x:Name="tbEmail1"
+            <TextBox x:Name="tbDate2"
                 HorizontalAlignment="Left"
                 Margin="122,457,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
-                Height="28" Background="White" />
-            <TextBox  x:Name="tbName1"
+                Height="28" Background="White" IsReadOnly="True" />
+            <TextBox  x:Name="tbDate1"
                 HorizontalAlignment="Left"
                 Margin="122,408,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
-                Height="28" SelectionTextBrush="White" Background="White" />
-            <TextBox  x:Name="tbPass1"
+                Height="28" SelectionTextBrush="White" Background="White" IsReadOnly="True" />
+            <TextBox  x:Name="tbTenPhong"
                 HorizontalAlignment="Left"
                 Margin="122,361,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
-                Height="28" Background="White" />
+                Height="28" Background="White" IsReadOnly="True" />
             <Label Content="Dịch Vụ"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Height="72"
                 FontStyle="Normal"
                 FontWeight="DemiBold"
                 Width="167"
                 Foreground="White"
-                FontSize="40" />
+                FontSize="40" Margin="517,0,0,0" />
             <TextBox x:Name="tbCID1"
                 Visibility="Hidden"
                 HorizontalAlignment="Left"
@@ -182,49 +182,59 @@
                 Width="120"
                 Text="{Binding CustomerId, Mode=OneWay}"
                 DataContext="{Binding SelectedItem, ElementName=lvCus}" />
-            <TextBox x:Name="tbEmail_Copy1"
+            <TextBox x:Name="tbNumOld"
                 HorizontalAlignment="Left"
                 Margin="122,506,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
                 Height="28" Background="White" />
-            <TextBox  x:Name="tbPass_Copy3"
+            <TextBox  x:Name="tbNumNew"
                 HorizontalAlignment="Left"
                 Margin="122,557,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
-                Height="28" Background="White" />
-            <TextBox  x:Name="tbPass_Copy4"
+                Height="28" Background="White" IsReadOnly="True" />
+            <TextBox  x:Name="tbName1"
                 HorizontalAlignment="Left"
                 Margin="517,361,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
                 Height="28" Background="White" />
-            <TextBox  x:Name="tbPass_Copy5"
+            <TextBox  x:Name="tbStatus"
                 HorizontalAlignment="Left"
                 Margin="517,408,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
-                Height="28" Background="White" />
+                Height="28" Background="White" IsReadOnly="True" />
             <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="42,363,0,0" VerticalAlignment="Top"/>
             <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="46,404,0,0" VerticalAlignment="Top" Width="76"/>
             <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="46,458,0,0" VerticalAlignment="Top"/>
             <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="55,506,0,0" VerticalAlignment="Top"/>
             <Label Content="Số Mới" HorizontalAlignment="Left" Margin="55,558,0,0" VerticalAlignment="Top"/>
             <Label Content="Tên" HorizontalAlignment="Left" Margin="457,363,0,0" VerticalAlignment="Top"/>
-            <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="447,408,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="tbEmail_Copy2"
+            <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="444,410,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbPriceAlone"
                 HorizontalAlignment="Left"
-                Margin="517,520,0,0"
+                Margin="517,458,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
                 Width="216"
                 Height="28" Background="White" />
-            <Label Content="Đơn Giá" HorizontalAlignment="Left" Margin="439,520,0,0" VerticalAlignment="Top" Width="73"/>
+            <Label Content="Đơn Giá" HorizontalAlignment="Left" Margin="444,459,0,0" VerticalAlignment="Top" Width="73"/>
+            <Button Content="Tính Tiền" HorizontalAlignment="Left" Margin="571,558,0,0" VerticalAlignment="Top" Height="28" Width="107" Background="#FFC9C2C2"/>
+            <TextBox x:Name="tbTotal"
+                HorizontalAlignment="Left"
+                Margin="517,504,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" IsReadOnly="True" />
+            <Label Content="Tổng Tiền" HorizontalAlignment="Left" Margin="443,505,0,0" VerticalAlignment="Top" Width="73"/>
+            <Label Content="VND" HorizontalAlignment="Left" Margin="738,506,0,0" VerticalAlignment="Top" Width="73"/>
         </Grid>
     </Grid>
 </Window>

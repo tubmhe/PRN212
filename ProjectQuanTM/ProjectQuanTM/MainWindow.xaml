@@ -9,7 +9,7 @@
     <Grid Background="#FFB8C0C4" Margin="0,0,10,-6">
 
         <ListView Name="lvCus"
-          Margin="29,77,74,106" BorderBrush="#89FFFFFF" Background="White">
+          Margin="110,77,124,106" BorderBrush="#89FFFFFF" Background="White">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Tên"
@@ -24,12 +24,10 @@
                     <GridViewColumn Header="Tên Phòng"
                             Width="130"
                             DisplayMemberBinding="{Binding Path=RoomName}" />   
-                    <GridViewColumn Header="Tiền Cọc"
+                    <GridViewColumn Header="Tiền Phòng"
                             Width="130"
                             DisplayMemberBinding="{Binding Path=MoneyRoom}" />
-                    <GridViewColumn Header="Tiền Cọc"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=MoneyCoc}" />
+                    
                     <GridViewColumn Header="Ngày Thuê"
                             Width="150"
                             DisplayMemberBinding="{Binding Path=DateStart}" />
