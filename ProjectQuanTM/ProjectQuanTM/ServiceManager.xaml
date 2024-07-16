@@ -1,0 +1,230 @@
+﻿<Window x:Class="ProjectQuanTM.ServiceManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectQuanTM"
+        mc:Ignorable="d"
+                Title="DanhSachThuePhong" Height="635" Width="1266">
+    <Grid Background="#FFB8C0C4" Margin="0,0,10,-6">
+
+        <ListView Name="lvCus"
+      Margin="125,65,132,310" BorderBrush="#89FFFFFF" Background="White">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Tên"
+                        Width="130"
+                        DisplayMemberBinding="{Binding Path=Name}" />
+                    <GridViewColumn Header="Tên Phòng"
+                        Width="130"
+                        DisplayMemberBinding="{Binding Path=DateStart}" />
+                    <GridViewColumn Header="Từ Ngày"
+                        Width="130"
+                        DisplayMemberBinding="{Binding Path=DateEnd}" />
+                    <GridViewColumn Header="Tới Ngày"
+                        Width="150"
+                        DisplayMemberBinding="{Binding Path=DateEnd}" />
+                    <GridViewColumn Header="Số Cũ"
+                        Width="150"
+                        DisplayMemberBinding="{Binding Path=NumOld}" />
+                    <GridViewColumn Header="Số Mới"
+                         Width="150"
+                         DisplayMemberBinding="{Binding Path=NumNew}" />
+
+                    <GridViewColumn Header="Trạng Thái"
+                         Width="150"
+                         DisplayMemberBinding="{Binding Path=Status}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox Name="tbEmail"
+         HorizontalAlignment="Left"
+         Margin="122,457,0,0"
+         TextWrapping="Wrap"
+         VerticalAlignment="Top"
+         Width="216"
+         Height="28" Background="White" />
+        <TextBox  Name="tbName"
+          HorizontalAlignment="Left"
+          Margin="122,408,0,0"
+          TextWrapping="Wrap"
+          VerticalAlignment="Top"
+          Width="216"
+          Height="28" SelectionTextBrush="White" Background="White" />
+        <TextBox  Name="tbPass"
+          HorizontalAlignment="Left"
+          Margin="122,361,0,0"
+          TextWrapping="Wrap"
+          VerticalAlignment="Top"
+          Width="216"
+          Height="28" Background="White" />
+        <Label Content="Dịch Vụ"
+   HorizontalAlignment="Center"
+   VerticalAlignment="Top"
+   Height="72"
+   FontStyle="Normal"
+   FontWeight="DemiBold"
+   Width="167"
+   Foreground="White"
+   FontSize="40" />
+        <TextBox Name="tbCID"
+     Visibility="Hidden"
+     HorizontalAlignment="Left"
+     Margin="528,47,0,0"
+     TextWrapping="Wrap"
+     VerticalAlignment="Top"
+     Width="120"
+     Text="{Binding Path=CustomerId, Mode=OneWay}"
+     DataContext="{Binding ElementName=lvCus, Path=SelectedItem}" />
+        <TextBox x:Name="tbEmail_Copy"
+            HorizontalAlignment="Left"
+            Margin="122,506,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="216"
+            Height="28" Background="White" />
+        <TextBox  x:Name="tbPass_Copy"
+            HorizontalAlignment="Left"
+            Margin="122,557,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="216"
+            Height="28" Background="White" />
+        <TextBox  x:Name="tbPass_Copy1"
+            HorizontalAlignment="Left"
+            Margin="517,361,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="216"
+            Height="28" Background="White" />
+        <TextBox  x:Name="tbPass_Copy2"
+            HorizontalAlignment="Left"
+            Margin="517,408,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="216"
+            Height="28" Background="White" />
+        <CheckBox Content="Trạng Thái" HorizontalAlignment="Left" Margin="517,459,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="42,363,0,0" VerticalAlignment="Top"/>
+        <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="46,404,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="46,458,0,0" VerticalAlignment="Top"/>
+        <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="55,506,0,0" VerticalAlignment="Top"/>
+        <Label Content="Số Mới" HorizontalAlignment="Left" Margin="55,558,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tên" HorizontalAlignment="Left" Margin="457,363,0,0" VerticalAlignment="Top"/>
+        <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="447,408,0,0" VerticalAlignment="Top"/>
+        <Grid Background="#FFB8C0C4">
+
+            <ListView x:Name="lvCus1"
+                Margin="125,65,132,310" BorderBrush="#89FFFFFF" Background="White">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Tên"
+                            Width="130"
+                            DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="Tên Phòng"
+                            Width="130"
+                            DisplayMemberBinding="{Binding DateStart}" />
+                        <GridViewColumn Header="Từ Ngày"
+                            Width="130"
+                            DisplayMemberBinding="{Binding DateEnd}" />
+                        <GridViewColumn Header="Tới Ngày"
+                            Width="150"
+                            DisplayMemberBinding="{Binding DateEnd}" />
+                        <GridViewColumn Header="Số Cũ"
+                            Width="150"
+                            DisplayMemberBinding="{Binding NumOld}" />
+                        <GridViewColumn Header="Số Mới"
+                            Width="150"
+                            DisplayMemberBinding="{Binding NumNew}" />
+
+                        <GridViewColumn Header="Trạng Thái"
+                            Width="150"
+                            DisplayMemberBinding="{Binding Status}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox x:Name="tbEmail1"
+                HorizontalAlignment="Left"
+                Margin="122,457,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <TextBox  x:Name="tbName1"
+                HorizontalAlignment="Left"
+                Margin="122,408,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" SelectionTextBrush="White" Background="White" />
+            <TextBox  x:Name="tbPass1"
+                HorizontalAlignment="Left"
+                Margin="122,361,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <Label Content="Dịch Vụ"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Height="72"
+                FontStyle="Normal"
+                FontWeight="DemiBold"
+                Width="167"
+                Foreground="White"
+                FontSize="40" />
+            <TextBox x:Name="tbCID1"
+                Visibility="Hidden"
+                HorizontalAlignment="Left"
+                Margin="528,47,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="120"
+                Text="{Binding CustomerId, Mode=OneWay}"
+                DataContext="{Binding SelectedItem, ElementName=lvCus}" />
+            <TextBox x:Name="tbEmail_Copy1"
+                HorizontalAlignment="Left"
+                Margin="122,506,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <TextBox  x:Name="tbPass_Copy3"
+                HorizontalAlignment="Left"
+                Margin="122,557,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <TextBox  x:Name="tbPass_Copy4"
+                HorizontalAlignment="Left"
+                Margin="517,361,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <TextBox  x:Name="tbPass_Copy5"
+                HorizontalAlignment="Left"
+                Margin="517,408,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="42,363,0,0" VerticalAlignment="Top"/>
+            <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="46,404,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="46,458,0,0" VerticalAlignment="Top"/>
+            <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="55,506,0,0" VerticalAlignment="Top"/>
+            <Label Content="Số Mới" HorizontalAlignment="Left" Margin="55,558,0,0" VerticalAlignment="Top"/>
+            <Label Content="Tên" HorizontalAlignment="Left" Margin="457,363,0,0" VerticalAlignment="Top"/>
+            <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="447,408,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbEmail_Copy2"
+                HorizontalAlignment="Left"
+                Margin="517,520,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="216"
+                Height="28" Background="White" />
+            <Label Content="Đơn Giá" HorizontalAlignment="Left" Margin="439,520,0,0" VerticalAlignment="Top" Width="73"/>
+        </Grid>
+    </Grid>
+</Window>
