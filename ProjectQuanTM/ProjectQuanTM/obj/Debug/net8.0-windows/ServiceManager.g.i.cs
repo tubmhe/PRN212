@@ -213,7 +213,7 @@ namespace ProjectQuanTM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProjectQuanTM;V1.0.0.0;component/servicemanager.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjectQuanTM;component/servicemanager.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ServiceManager.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

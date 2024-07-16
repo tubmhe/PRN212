@@ -8,13 +8,13 @@
                 Title="RoomManager" Height="450" Width="800">
     <Grid Background="#FFB8C0C4">
 
-        <ListView Name="lvCus"
+        <ListView Name="listRooms" SelectionChanged="room_SelectionChanged"
       Margin="24,56,272,204" BorderBrush="#89FFFFFF" Background="White">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID"
                         Width="130"
-                        DisplayMemberBinding="{Binding Path=RoomId}" />
+                        DisplayMemberBinding="{Binding Path=Id}" />
                     <GridViewColumn Header="Tên"
                         Width="160"
                         DisplayMemberBinding="{Binding Path=Name}" />
@@ -37,7 +37,7 @@
     Background="#FFA56B59"
     FontFamily="Kozuka Mincho Pr6N B"
     Foreground="Black"
-    BorderBrush="White"
+    BorderBrush="White" Click="btnDelete_Click"
      >
             <Button.Style>
                 <Style TargetType="Button">
@@ -68,7 +68,7 @@
     Background="#FFCACA6F"
     FontFamily="Kozuka Mincho Pr6N B"
     Foreground="Black"
-    BorderBrush="White"
+    BorderBrush="White" Click="btnUpdate_Click"
      >
             <Button.Style>
                 <Style TargetType="Button">
@@ -99,7 +99,7 @@
     Background="#FFA4CCD1"
     FontFamily="Kozuka Mincho Pr6N B"
     Foreground="Black"
-    BorderBrush="White"
+    BorderBrush="White" Click="btnInsert_Click"
     >
             <Button.Style>
                 <Style TargetType="Button">
@@ -144,7 +144,7 @@
         TextWrapping="Wrap"
         VerticalAlignment="Top"
         Width="216"
-        Height="28" Background="White" />
+        Height="28" Background="White" TextChanged="tbName_TextChanged" />
         <TextBox  x:Name="tbPrice"
         HorizontalAlignment="Left"
         Margin="554,128,0,0"

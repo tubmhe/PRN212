@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRN212\\ProjectQuanTM\\",
+  "WorkspaceRootPath": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prn212\\projectquantm\\projectquantm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\addrent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\addrent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +18,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ProjectQuanTM\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ProjectQuanTM\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AddRent.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml.cs",
+              "RelativeDocumentMoniker": "ProjectQuanTM\\AddRent.xaml.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml.cs",
+              "RelativeToolTip": "ProjectQuanTM\\AddRent.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T11:58:59.687Z",
+              "WhenOpened": "2024-07-16T18:10:06.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddRent.xaml",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml",
+              "RelativeDocumentMoniker": "ProjectQuanTM\\AddRent.xaml",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml",
+              "RelativeToolTip": "ProjectQuanTM\\AddRent.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-16T18:09:40.318Z",
               "EditorCaption": ""
             }
           ]
