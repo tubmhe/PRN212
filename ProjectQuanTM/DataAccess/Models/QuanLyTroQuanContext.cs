@@ -29,11 +29,6 @@ public partial class QuanLyTroQuanContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Customer>(entity =>
-        {
-            entity.Property(e => e.Id).ValueGeneratedNever();
-        });
-
         modelBuilder.Entity<Rent>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
@@ -50,7 +45,6 @@ public partial class QuanLyTroQuanContext : DbContext
         modelBuilder.Entity<Room>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.Name).IsFixedLength();
         });
 
         modelBuilder.Entity<Service>(entity =>

@@ -15,7 +15,8 @@ public partial class Rent
 
     public int RoomId { get; set; }
 
-    public int CustomerId { get; set; }
+    [StringLength(50)]
+    public string CustomerId { get; set; } = null!;
 
     public double Deposits { get; set; }
 

@@ -11,7 +11,8 @@ public partial class Customer
 {
     [Key]
     [Column("ID")]
-    public int Id { get; set; }
+    [StringLength(50)]
+    public string Id { get; set; } = null!;
 
     [StringLength(50)]
     public string Name { get; set; } = null!;
