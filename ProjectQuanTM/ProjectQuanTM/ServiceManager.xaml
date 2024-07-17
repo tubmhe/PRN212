@@ -236,5 +236,29 @@
             <Label Content="Tổng Tiền" HorizontalAlignment="Left" Margin="443,505,0,0" VerticalAlignment="Top" Width="73"/>
             <Label Content="VND" HorizontalAlignment="Left" Margin="738,506,0,0" VerticalAlignment="Top" Width="73"/>
         </Grid>
+        <Button x:Name="btnBack" Content="Trở về" HorizontalAlignment="Left" Margin="1019,577,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FF6F2C2C" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.11"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40" CornerRadius="20" Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

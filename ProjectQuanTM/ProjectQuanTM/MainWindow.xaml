@@ -21,7 +21,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnDelete" Content="Ngừng cho thuê" HorizontalAlignment="Left" Margin="638,375,0,0" VerticalAlignment="Top" Height="29" Width="193" Background="#FFA56B59" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.433,-1.461" Click="btnDelete_Click" >
+        <Button x:Name="btnDelete" Content="Ngừng cho thuê" HorizontalAlignment="Left" Margin="116,384,0,0" VerticalAlignment="Top" Height="29" Width="193" Background="#FFA56B59" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.433,-1.461" Click="btnDelete_Click" >
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -38,7 +38,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnInsert" Content="Tạo hợp đồng" HorizontalAlignment="Left" Margin="251,367,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+        <Button x:Name="btnInsert" Content="Tạo hợp đồng" HorizontalAlignment="Left" Margin="314,379,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -64,5 +64,53 @@
             </Button.Template>
         </Button>
         <Label Content="Danh Sách Thuê" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="72" FontStyle="Normal" FontWeight="DemiBold" Width="349" Foreground="White" FontSize="40" />
+        <Button x:Name="btnService" Content="Dịch vụ" HorizontalAlignment="Left" Margin="831,379,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.11"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40" CornerRadius="20" Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnRoom" Content="Danh sách phòng" HorizontalAlignment="Left" Margin="562,379,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.11"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40" CornerRadius="20" Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>
