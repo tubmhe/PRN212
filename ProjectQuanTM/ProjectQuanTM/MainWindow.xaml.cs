@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DataAccess.Repository.Rent;
 
 namespace ProjectQuanTM
 {
@@ -19,6 +20,14 @@ namespace ProjectQuanTM
         public MainWindow()
         {
             InitializeComponent();
+            LoadRent();
         }
+        private void LoadRent()
+        {
+            var rent = new RentRepository();
+            var rents = rent.GetRents();
+            listRent.ItemsSource = rents;
+        }
+
     }
 }

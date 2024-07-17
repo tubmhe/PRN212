@@ -2,7 +2,7 @@
 {
     public class RentCreateRequestViewModel
     {
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
         public string CustomerName { get; set; }
         public string PhoneNumber { get; set; }
         public int RoomId { get; set; }

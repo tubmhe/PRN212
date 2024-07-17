@@ -15,7 +15,6 @@ namespace DataAccess.Repository.Rent
                              join ro in context.Rooms on r.RoomId equals ro.Id
                              select new RentViewModel
                              {
-                                 Id = r.Id,
                                  CustomerName = c.Name,
                                  PhoneNumber = c.PhoneNumber,
                                  RoomName = ro.Name,
@@ -23,7 +22,7 @@ namespace DataAccess.Repository.Rent
                                  Deposits = r.Deposits,
                                  StartDate = r.StartDate,
                                  EndDate = r.EndDate
-                             });
+                             }).ToList();
                 return rents;
             }
         }
@@ -32,18 +31,9 @@ namespace DataAccess.Repository.Rent
         {
             using (var context = new QuanLyTroQuanContext())
             {
-                var customerId = context.Customers.Select(c => c.Id).Max();
-                if (customerId == null)
-                {
-                    customerId = 1;
-                }
-                else
-                {
-                    customerId++;
-                }
                 var newCustomer = new Customer
                 {
-                    Id = customerId,
+                    Id = rent.CustomerId,
                     Name = rent.CustomerName,
                     PhoneNumber = rent.PhoneNumber
                 };
@@ -64,7 +54,7 @@ namespace DataAccess.Repository.Rent
                 var newRent = new Models.Rent
                 {
                     Id = rentId,
-                    CustomerId = customerId,
+                    CustomerId = rent.CustomerId,
                     RoomId = rent.RoomId,
                     Deposits = rent.Deposits,
                     StartDate = DateOnly.FromDateTime(DateTime.Now),

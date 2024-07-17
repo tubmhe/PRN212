@@ -5,50 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectQuanTM"
         mc:Ignorable="d"
-            Title="DanhSachThuePhong" Height="450" Width="1200">
+        Title="DanhSachThuePhong" Height="450" Width="1200">
     <Grid Background="#FFB8C0C4" Margin="0,0,10,-6">
-
-        <ListView Name="lvCus"
-          Margin="110,77,124,106" BorderBrush="#89FFFFFF" Background="White">
+        <ListView Name="listRent" Margin="110,77,124,106" BorderBrush="#89FFFFFF" Background="White">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Tên"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=Name}" />
-                    <GridViewColumn Header="CCCD"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=Cccd}" />
-                    <GridViewColumn Header="SĐT"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=Phone}" />
-                    <GridViewColumn Header="Tên Phòng"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=RoomName}" />   
-                    <GridViewColumn Header="Tiền Phòng"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Path=MoneyRoom}" />
-                    
-                    <GridViewColumn Header="Ngày Thuê"
-                            Width="150"
-                            DisplayMemberBinding="{Binding Path=DateStart}" />
-                    <GridViewColumn Header="Ngày Trả Phòng"
-                            Width="150"
-                            DisplayMemberBinding="{Binding Path=DateFinish}" />
+                    <GridViewColumn Header="Tên" Width="130" DisplayMemberBinding="{Binding CustomerName}" />
+                    <GridViewColumn Header="SĐT" Width="130" DisplayMemberBinding="{Binding PhoneNumber}" />
+                    <GridViewColumn Header="Tên Phòng" Width="130" DisplayMemberBinding="{Binding RoomName}" />
+                    <GridViewColumn Header="Tiền Phòng" Width="130" DisplayMemberBinding="{Binding Price}" />
+                    <GridViewColumn Header="Tiền Cọc" Width="130" DisplayMemberBinding="{Binding Deposits}" />
+                    <GridViewColumn Header="Ngày Thuê" Width="150" DisplayMemberBinding="{Binding StartDate}" />
+                    <GridViewColumn Header="Ngày Trả Phòng" Width="150" DisplayMemberBinding="{Binding EndDate}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnDelete"
-        Content="Delete"
-        HorizontalAlignment="Left"
-        Margin="625,368,0,0"
-        VerticalAlignment="Top"
-        Height="36"
-        Width="194"
-        Background="#FFA56B59"
-        FontFamily="Kozuka Mincho Pr6N B"
-        Foreground="Black"
-        BorderBrush="White" RenderTransformOrigin="0.433,-1.461"
-         >
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="625,368,0,0" VerticalAlignment="Top" Height="36" Width="194" Background="#FFA56B59" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.433,-1.461" >
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -59,27 +31,13 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <Border Width="150" Height="40"
-            CornerRadius="20"
-            Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
-                        <ContentPresenter VerticalAlignment="Center"
-                        HorizontalAlignment="Center"/>
+                    <Border Width="150" Height="40" CornerRadius="20" Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnInsert"
-        Content="Thêm"
-        HorizontalAlignment="Left"
-        Margin="251,367,0,0"
-        VerticalAlignment="Top"
-        Height="44"
-        Width="306"
-        Background="#FFA4CCD1"
-        FontFamily="Kozuka Mincho Pr6N B"
-        Foreground="Black"
-        BorderBrush="White" RenderTransformOrigin="0.5,0.5"
-        >
+        <Button x:Name="btnInsert" Content="Thêm" HorizontalAlignment="Left" Margin="251,367,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -98,33 +56,12 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <Border Width="150" Height="40"
-            CornerRadius="20"
-            Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
-                        <ContentPresenter VerticalAlignment="Center"
-                        HorizontalAlignment="Center"/>
+                    <Border Width="150" Height="40" CornerRadius="20" Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Danh Sách Thuê"
-       HorizontalAlignment="Center"
-       Margin="0,0,0,0"
-       VerticalAlignment="Top"
-       Height="72"
-       FontStyle="Normal"
-       FontWeight="DemiBold"
-       Width="349"
-       Foreground="White"
-       FontSize="40" />
-        <TextBox Name="tbCID"
-         Visibility="Hidden"
-         HorizontalAlignment="Left"
-         Margin="528,47,0,0"
-         TextWrapping="Wrap"
-         VerticalAlignment="Top"
-         Width="120"
-         Text="{Binding Path=CustomerId, Mode=OneWay}"
-         DataContext="{Binding ElementName=lvCus, Path=SelectedItem}" />
+        <Label Content="Danh Sách Thuê" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="72" FontStyle="Normal" FontWeight="DemiBold" Width="349" Foreground="White" FontSize="40" />
     </Grid>
 </Window>
