@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="DanhSachThuePhong" Height="450" Width="1200">
     <Grid Background="#FFB8C0C4" Margin="0,0,10,-6">
-        <ListView Name="listRent" Margin="110,77,124,106" BorderBrush="#89FFFFFF" Background="White">
+        <ListView Name="listRent" Margin="116,77,87,106" BorderBrush="#89FFFFFF" Background="White" SelectionChanged="listRent_SelectionChanged">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Header="Id" Width="30" DisplayMemberBinding="{Binding RentId}" />
                     <GridViewColumn Header="Tên" Width="130" DisplayMemberBinding="{Binding CustomerName}" />
                     <GridViewColumn Header="SĐT" Width="130" DisplayMemberBinding="{Binding PhoneNumber}" />
                     <GridViewColumn Header="Tên Phòng" Width="130" DisplayMemberBinding="{Binding RoomName}" />
@@ -20,7 +21,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="625,368,0,0" VerticalAlignment="Top" Height="36" Width="194" Background="#FFA56B59" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.433,-1.461" >
+        <Button x:Name="btnDelete" Content="Ngừng cho thuê" HorizontalAlignment="Left" Margin="638,375,0,0" VerticalAlignment="Top" Height="29" Width="193" Background="#FFA56B59" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.433,-1.461" Click="btnDelete_Click" >
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -37,7 +38,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnInsert" Content="Thêm" HorizontalAlignment="Left" Margin="251,367,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnInsert" Content="Tạo hợp đồng" HorizontalAlignment="Left" Margin="251,367,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FFA4CCD1" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

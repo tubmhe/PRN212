@@ -40,11 +40,15 @@ namespace DataAccess.Repository.Room
             }
         }
 
-        public IEnumerable<Models.Room> GetRooms()
+        public IEnumerable<RoomViewModel> GetRooms()
         {
             using (var context = new QuanLyTroQuanContext())
             {
-                var rooms = context.Rooms.ToList();
+                var rooms = context.Rooms.Select(r => new RoomViewModel
+                {
+                    Id = r.Id,
+                    Name = r.Name,
+                }).ToList();
                 return rooms;
             }
         }

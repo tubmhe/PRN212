@@ -1,8 +1,10 @@
-﻿namespace DataAccess.Repository.Room
+﻿using DataAccess.ViewModels;
+
+namespace DataAccess.Repository.Room
 {
     public interface IRoomRepository
     {
-        public IEnumerable<Models.Room> GetRooms();
+        public IEnumerable<RoomViewModel> GetRooms();
 
         public void AddRoom(ViewModels.RoomCreateRequestViewModel room);
 

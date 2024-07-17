@@ -4411,24 +4411,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Máy tính\\PRN212\\ProjectQuanTM\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Máy tính\\PRN212\\ProjectQuanTM\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\OneDrive\\Máy tính\\PRN212\\ProjectQuanTM\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\tu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\tu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

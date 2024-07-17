@@ -15,13 +15,14 @@ namespace DataAccess.Repository.Rent
                              join ro in context.Rooms on r.RoomId equals ro.Id
                              select new RentViewModel
                              {
+                                 RentId = r.Id,
                                  CustomerName = c.Name,
                                  PhoneNumber = c.PhoneNumber,
                                  RoomName = ro.Name,
                                  Price = ro.Price,
                                  Deposits = r.Deposits,
-                                 StartDate = r.StartDate,
-                                 EndDate = r.EndDate
+                                 StartDate = r.StartDate.ToString(),
+                                 EndDate = r.EndDate == null ? "Đang thuê" : r.EndDate.ToString()
                              }).ToList();
                 return rents;
             }
@@ -79,7 +80,7 @@ namespace DataAccess.Repository.Rent
             using (var context = new QuanLyTroQuanContext())
             {
                 var rent = context.Rents.Find(id);
-                context.Rents.Remove(rent);
+                rent.EndDate = DateOnly.FromDateTime(DateTime.Now);
                 context.SaveChanges();
             }
         }

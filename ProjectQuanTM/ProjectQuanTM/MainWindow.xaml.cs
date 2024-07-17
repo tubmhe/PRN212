@@ -1,14 +1,7 @@
-﻿using System.Text;
+﻿using DataAccess.Repository.Rent;
+using DataAccess.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using DataAccess.Repository.Rent;
 
 namespace ProjectQuanTM
 {
@@ -29,5 +22,24 @@ namespace ProjectQuanTM
             listRent.ItemsSource = rents;
         }
 
+        private void listRent_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var rent = listRent.SelectedItem as RentViewModel;
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            var r = listRent.SelectedItem as RentViewModel;
+            var rent = new RentRepository();
+            rent.DeleteRent(r.RentId);
+            LoadRent();
+        }
+
+        private void btnInsert_Click(object sender, RoutedEventArgs e)
+        {
+            AddRent addRent = new AddRent();
+            addRent.Show();
+            this.Close();
+        }
     }
 }

@@ -1,5 +1,5 @@
-﻿using DataAccess.Models;
-using DataAccess.Repository.Rent;
+﻿using DataAccess.Repository.Rent;
+using DataAccess.Repository.Room;
 using DataAccess.ViewModels;
 using System.Windows;
 namespace ProjectQuanTM
@@ -17,11 +17,8 @@ namespace ProjectQuanTM
 
         private void LoadRoomNames()
         {
-            using (var context = new QuanLyTroQuanContext())
-            {
-                var rooms = context.Rooms.Select(r => r.Id).ToList();
-                tbRoomName.ItemsSource = rooms;
-            }
+            var room = new RoomRepository();
+            tbRoom.ItemsSource = room.GetRooms();
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
@@ -32,12 +29,14 @@ namespace ProjectQuanTM
                 CustomerId = tbID.Text,
                 CustomerName = tbName.Text,
                 PhoneNumber = tbPhoneNumber.Text,
-                RoomId = int.Parse(tbRoomName.Text),
+                RoomId = int.Parse(tbRoom.SelectedValue.ToString()),
                 Deposits = double.Parse(tbDeposits.Text)
             };
 
             rentDao.AddRent(createRent);
-            MessageBox.Show("Kí hợp đồng thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
 
         private void tbRoomName_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
