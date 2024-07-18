@@ -8,6 +8,10 @@
 
         public void UpdateRent(Models.Rent rent);
 
-        public void DeleteRent(int id);
+        public string DeleteRent(int id);
+
+        public int GetRentIdFromRoomName(string roomName);
+
+        public int GetRentIdFromRoomId(int roomId);
     }
 }

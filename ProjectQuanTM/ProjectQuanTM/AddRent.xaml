@@ -98,7 +98,7 @@ Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
                Margin="79,272,0,0"
                VerticalAlignment="Top" 
                Foreground="Black"/>
-        <ComboBox x:Name="tbRoom" HorizontalAlignment="Left" Margin="189,274,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="tbRoomName_SelectionChanged" DisplayMemberPath="Name" SelectedValuePath="Id">
+        <ComboBox x:Name="tbRoom" HorizontalAlignment="Left" Margin="189,274,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Name" SelectedValuePath="Id">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -107,6 +107,7 @@ Background="{TemplateBinding Background}" Margin="6,-17,7,-10">
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
+        <Button Content="Quay lại" HorizontalAlignment="Left" Margin="482,336,0,0" VerticalAlignment="Top" Height="36" Width="80" Click="Button_Click"/>
 
     </Grid>
 </Window>

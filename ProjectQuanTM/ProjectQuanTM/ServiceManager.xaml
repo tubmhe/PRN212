@@ -8,56 +8,40 @@
                 Title="DanhSachThuePhong" Height="635" Width="1266">
     <Grid Background="#FFB8C0C4" Margin="0,0,10,-6">
 
-        <ListView Name="lvCus"
-      Margin="125,65,132,310" BorderBrush="#89FFFFFF" Background="White">
+        <ListView Name="listServices"
+      Margin="125,65,132,310" BorderBrush="#89FFFFFF" Background="White" SelectionChanged="listServices_SelectionChanged_1">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Header="Id"
+                        Width="30"
+                        DisplayMemberBinding="{Binding Path=Id}" />
                     <GridViewColumn Header="Tên"
-                        Width="130"
-                        DisplayMemberBinding="{Binding Path=Name}" />
-                    <GridViewColumn Header="Tên Phòng"
-                        Width="130"
-                        DisplayMemberBinding="{Binding Path=DateStart}" />
-                    <GridViewColumn Header="Từ Ngày"
-                        Width="130"
-                        DisplayMemberBinding="{Binding Path=DateEnd}" />
-                    <GridViewColumn Header="Tới Ngày"
                         Width="150"
+                        DisplayMemberBinding="{Binding Path=CustomerName}" />
+                    <GridViewColumn Header="Phòng"
+                        Width="130"
+                        DisplayMemberBinding="{Binding Path=RoomName}" />
+                    <GridViewColumn Header="Từ Ngày"
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=DateStart}" />
+                    <GridViewColumn Header="Tới Ngày"
+                        Width="100"
                         DisplayMemberBinding="{Binding Path=DateEnd}" />
                     <GridViewColumn Header="Số Cũ"
-                        Width="150"
-                        DisplayMemberBinding="{Binding Path=NumOld}" />
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=OldNumber}" />
                     <GridViewColumn Header="Số Mới"
+                         Width="100"
+                         DisplayMemberBinding="{Binding Path=NewNumber}" />
+                    <GridViewColumn Header="Tổng tiền"
                          Width="150"
-                         DisplayMemberBinding="{Binding Path=NumNew}" />
-
+                         DisplayMemberBinding="{Binding Path=TotalAmount}" />
                     <GridViewColumn Header="Trạng Thái"
-                         Width="150"
+                         Width="130"
                          DisplayMemberBinding="{Binding Path=Status}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox Name="tbEmail"
-         HorizontalAlignment="Left"
-         Margin="122,457,0,0"
-         TextWrapping="Wrap"
-         VerticalAlignment="Top"
-         Width="216"
-         Height="28" Background="White" />
-        <TextBox  Name="tbName"
-          HorizontalAlignment="Left"
-          Margin="122,408,0,0"
-          TextWrapping="Wrap"
-          VerticalAlignment="Top"
-          Width="216"
-          Height="28" SelectionTextBrush="White" Background="White" />
-        <TextBox  Name="tbPass"
-          HorizontalAlignment="Left"
-          Margin="122,361,0,0"
-          TextWrapping="Wrap"
-          VerticalAlignment="Top"
-          Width="216"
-          Height="28" Background="White" />
         <Label Content="Dịch Vụ"
    HorizontalAlignment="Center"
    VerticalAlignment="Top"
@@ -76,167 +60,28 @@
      Width="120"
      Text="{Binding Path=CustomerId, Mode=OneWay}"
      DataContext="{Binding ElementName=lvCus, Path=SelectedItem}" />
-        <TextBox x:Name="tbEmail_Copy"
+        <TextBox  x:Name="tbNewNumber"
             HorizontalAlignment="Left"
-            Margin="122,506,0,0"
+            Margin="202,557,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="213"
+            Height="28" Background="White" />
+        <TextBox  x:Name="tbPrice"
+            HorizontalAlignment="Left"
+            Margin="595,361,0,0"
             TextWrapping="Wrap"
             VerticalAlignment="Top"
             Width="216"
-            Height="28" Background="White" />
-        <TextBox  x:Name="tbPass_Copy"
-            HorizontalAlignment="Left"
-            Margin="122,557,0,0"
-            TextWrapping="Wrap"
-            VerticalAlignment="Top"
-            Width="216"
-            Height="28" Background="White" />
-        <TextBox  x:Name="tbPass_Copy1"
-            HorizontalAlignment="Left"
-            Margin="517,361,0,0"
-            TextWrapping="Wrap"
-            VerticalAlignment="Top"
-            Width="216"
-            Height="28" Background="White" />
-        <TextBox  x:Name="tbPass_Copy2"
-            HorizontalAlignment="Left"
-            Margin="517,408,0,0"
-            TextWrapping="Wrap"
-            VerticalAlignment="Top"
-            Width="216"
-            Height="28" Background="White" />
-        <CheckBox Content="Trạng Thái" HorizontalAlignment="Left" Margin="517,459,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="42,363,0,0" VerticalAlignment="Top"/>
-        <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="46,404,0,0" VerticalAlignment="Top" Width="76"/>
-        <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="46,458,0,0" VerticalAlignment="Top"/>
-        <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="55,506,0,0" VerticalAlignment="Top"/>
-        <Label Content="Số Mới" HorizontalAlignment="Left" Margin="55,558,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tên" HorizontalAlignment="Left" Margin="457,363,0,0" VerticalAlignment="Top"/>
-        <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="447,408,0,0" VerticalAlignment="Top"/>
-        <Grid Background="#FFB8C0C4">
-
-            <ListView x:Name="lvCus1"
-                Margin="79,70,178,305" BorderBrush="#89FFFFFF" Background="White">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="Tên"
-                            Width="130"
-                            DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Tên Phòng"
-                            Width="130"
-                            DisplayMemberBinding="{Binding DateStart}" />
-                        <GridViewColumn Header="Từ Ngày"
-                            Width="130"
-                            DisplayMemberBinding="{Binding DateEnd}" />
-                        <GridViewColumn Header="Tới Ngày"
-                            Width="150"
-                            DisplayMemberBinding="{Binding DateEnd}" />
-                        <GridViewColumn Header="Số Cũ"
-                            Width="150"
-                            DisplayMemberBinding="{Binding NumOld}" />
-                        <GridViewColumn Header="Số Mới"
-                            Width="150"
-                            DisplayMemberBinding="{Binding NumNew}" />
-
-                        <GridViewColumn Header="Trạng Thái"
-                            Width="150"
-                            DisplayMemberBinding="{Binding Status}" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-            <TextBox x:Name="tbDate2"
-                HorizontalAlignment="Left"
-                Margin="122,457,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" IsReadOnly="True" />
-            <TextBox  x:Name="tbDate1"
-                HorizontalAlignment="Left"
-                Margin="122,408,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" SelectionTextBrush="White" Background="White" IsReadOnly="True" />
-            <TextBox  x:Name="tbTenPhong"
-                HorizontalAlignment="Left"
-                Margin="122,361,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" IsReadOnly="True" />
-            <Label Content="Dịch Vụ"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Height="72"
-                FontStyle="Normal"
-                FontWeight="DemiBold"
-                Width="167"
-                Foreground="White"
-                FontSize="40" Margin="517,0,0,0" />
-            <TextBox x:Name="tbCID1"
-                Visibility="Hidden"
-                HorizontalAlignment="Left"
-                Margin="528,47,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="120"
-                Text="{Binding CustomerId, Mode=OneWay}"
-                DataContext="{Binding SelectedItem, ElementName=lvCus}" />
-            <TextBox x:Name="tbNumOld"
-                HorizontalAlignment="Left"
-                Margin="122,506,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" />
-            <TextBox  x:Name="tbNumNew"
-                HorizontalAlignment="Left"
-                Margin="122,557,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" IsReadOnly="True" />
-            <TextBox  x:Name="tbName1"
-                HorizontalAlignment="Left"
-                Margin="517,361,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" />
-            <TextBox  x:Name="tbStatus"
-                HorizontalAlignment="Left"
-                Margin="517,408,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" IsReadOnly="True" />
-            <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="42,363,0,0" VerticalAlignment="Top"/>
-            <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="46,404,0,0" VerticalAlignment="Top" Width="76"/>
-            <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="46,458,0,0" VerticalAlignment="Top"/>
-            <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="55,506,0,0" VerticalAlignment="Top"/>
-            <Label Content="Số Mới" HorizontalAlignment="Left" Margin="55,558,0,0" VerticalAlignment="Top"/>
-            <Label Content="Tên" HorizontalAlignment="Left" Margin="457,363,0,0" VerticalAlignment="Top"/>
-            <Label Content="Trạng Thái" HorizontalAlignment="Left" Margin="444,410,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="tbPriceAlone"
-                HorizontalAlignment="Left"
-                Margin="517,458,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" />
-            <Label Content="Đơn Giá" HorizontalAlignment="Left" Margin="444,459,0,0" VerticalAlignment="Top" Width="73"/>
-            <Button Content="Tính Tiền" HorizontalAlignment="Left" Margin="571,558,0,0" VerticalAlignment="Top" Height="28" Width="107" Background="#FFC9C2C2"/>
-            <TextBox x:Name="tbTotal"
-                HorizontalAlignment="Left"
-                Margin="517,504,0,0"
-                TextWrapping="Wrap"
-                VerticalAlignment="Top"
-                Width="216"
-                Height="28" Background="White" IsReadOnly="True" />
-            <Label Content="Tổng Tiền" HorizontalAlignment="Left" Margin="443,505,0,0" VerticalAlignment="Top" Width="73"/>
-            <Label Content="VND" HorizontalAlignment="Left" Margin="738,506,0,0" VerticalAlignment="Top" Width="73"/>
-        </Grid>
-        <Button x:Name="btnBack" Content="Trở về" HorizontalAlignment="Left" Margin="1019,577,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FF6F2C2C" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+            Height="28" Background="White" TextChanged="tbPrice_TextChanged" />
+        <CheckBox x:Name="tbStatus" Content="Đã thanh toán" HorizontalAlignment="Left" Margin="595,459,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tên Phòng" HorizontalAlignment="Left" Margin="119,366,0,0" VerticalAlignment="Top"/>
+        <Label Content="Từ Ngày" HorizontalAlignment="Left" Margin="119,410,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Tới Ngày" HorizontalAlignment="Left" Margin="119,461,0,0" VerticalAlignment="Top"/>
+        <Label Content="Số Cũ" HorizontalAlignment="Left" Margin="119,508,0,0" VerticalAlignment="Top"/>
+        <Label Content="Số Mới" HorizontalAlignment="Left" Margin="119,559,0,0" VerticalAlignment="Top"/>
+        <Label Content="Đơn giá" HorizontalAlignment="Left" Margin="525,363,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBack" Content="Quay lại" HorizontalAlignment="Left" Margin="996,551,0,0" VerticalAlignment="Top" Height="44" Width="306" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnBack_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -260,5 +105,27 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <ComboBox x:Name="listRooms" HorizontalAlignment="Left" Margin="202,361,0,0" VerticalAlignment="Top" Width="213" Height="28" DisplayMemberPath="Name" SelectedValuePath="Id"/>
+        <DatePicker x:Name="dpEndDate" HorizontalAlignment="Left" Margin="202,459,0,0" VerticalAlignment="Top" Width="213" Height="31"/>
+        <DatePicker x:Name="dpStartDate" HorizontalAlignment="Left" Margin="202,408,0,0" VerticalAlignment="Top" Width="213" Height="28"/>
+        <TextBox  x:Name="tbOldNumber"
+            HorizontalAlignment="Left"
+            Margin="202,506,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="213"
+            Height="28" Background="White" />
+        <Label Content="VND" HorizontalAlignment="Left" Margin="815,363,0,0" VerticalAlignment="Top"/>
+        <TextBox  x:Name="tbTotalAmount"
+            HorizontalAlignment="Left"
+            Margin="595,406,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="216"
+            Height="28" Background="White" IsReadOnly="True"/>
+        <Label Content="Tổng tiền" HorizontalAlignment="Left" Margin="525,408,0,0" VerticalAlignment="Top"/>
+        <Label Content="VND" HorizontalAlignment="Left" Margin="815,408,0,0" VerticalAlignment="Top"/>
+        <Button Content="Tạo mới" HorizontalAlignment="Left" Margin="595,506,0,0" VerticalAlignment="Top" Width="96" Height="28" Click="Button_Click"/>
+        <Button Content="Lưu chỉnh sửa" HorizontalAlignment="Left" Margin="715,506,0,0" VerticalAlignment="Top" Width="96" Height="28" Click="Button_Click_1"/>
     </Grid>
 </Window>

@@ -20,6 +20,8 @@ public partial class Room
 
     public int Price { get; set; }
 
+    public bool? IsEmpty { get; set; }
+
     [InverseProperty("Room")]
     public virtual ICollection<Rent> Rents { get; set; } = new List<Rent>();
 }

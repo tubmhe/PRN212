@@ -11,5 +11,7 @@ namespace DataAccess.Repository.Room
         public void UpdateRoom(Models.Room room);
 
         public void DeleteRoom(int roomId);
+
+        public IEnumerable<RoomViewModel> GetRoomsForService();
     }
 }

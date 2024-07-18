@@ -9,6 +9,9 @@ namespace ProjectQuanTM
     /// </summary>
     public partial class AddRent : Window
     {
+        private readonly RoomRepository roomRepository = new RoomRepository();
+        private readonly RentRepository rentRepository = new RentRepository();
+
         public AddRent()
         {
             InitializeComponent();
@@ -17,31 +20,44 @@ namespace ProjectQuanTM
 
         private void LoadRoomNames()
         {
-            var room = new RoomRepository();
-            tbRoom.ItemsSource = room.GetRooms();
+            tbRoom.ItemsSource = roomRepository.GetRooms().Where(r => r.Status == "Còn kinh doanh" && r.IsEmpty == "Chưa thuê");
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            var rentDao = new RentRepository();
-            var createRent = new RentCreateRequestViewModel
+            if (tbRoom.SelectedValue == null)
             {
-                CustomerId = tbID.Text,
-                CustomerName = tbName.Text,
-                PhoneNumber = tbPhoneNumber.Text,
-                RoomId = int.Parse(tbRoom.SelectedValue.ToString()),
-                Deposits = double.Parse(tbDeposits.Text)
-            };
+                MessageBox.Show("Vui lòng chọn phòng trước khi tạo mới");
+                return;
+            }
+            try
+            {
+                var createRent = new RentCreateRequestViewModel
+                {
+                    CustomerId = tbID.Text,
+                    CustomerName = tbName.Text,
+                    PhoneNumber = tbPhoneNumber.Text,
+                    RoomId = int.Parse(tbRoom.SelectedValue.ToString()),
+                    Deposits = double.Parse(tbDeposits.Text)
+                };
 
-            rentDao.AddRent(createRent);
+                rentRepository.AddRent(createRent);
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Tạo mới thất bại. Vui lòng điền dữ liệu hợp lệ");
+            }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
-        }
-
-        private void tbRoomName_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

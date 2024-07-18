@@ -13,24 +13,27 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID"
-                        Width="130"
+                        Width="50"
                         DisplayMemberBinding="{Binding Path=Id}" />
                     <GridViewColumn Header="Tên"
-                        Width="160"
+                        Width="130"
                         DisplayMemberBinding="{Binding Path=Name}" />
                     <GridViewColumn Header="Giá"
-                        Width="130"
+                        Width="100"
                         DisplayMemberBinding="{Binding Path=Price}" />
+                    <GridViewColumn Header="Tình trạng"
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=IsEmpty}" />
                     <GridViewColumn Header="Trạng Thái"
-                        Width="80"
+                        Width="120"
                         DisplayMemberBinding="{Binding Path=Status}" />
                 </GridView>
             </ListView.View>
         </ListView>
         <Button x:Name="btnDelete"
-    Content="Delete"
+    Content="Xóa phòng"
     HorizontalAlignment="Left"
-    Margin="335,326,0,0"
+    Margin="350,335,0,0"
     VerticalAlignment="Top"
     Height="36"
     Width="194"
@@ -58,17 +61,17 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Update"
+        <Button Content="Lưu chỉnh sửa"
     x:Name="btnUpdate"
     HorizontalAlignment="Left"
-    Margin="350,263,0,0"
+    Margin="365,255,0,0"
     VerticalAlignment="Top"
     Height="36"
     Width="164"
     Background="#FFCACA6F"
     FontFamily="Kozuka Mincho Pr6N B"
     Foreground="Black"
-    BorderBrush="White" Click="btnUpdate_Click"
+    BorderBrush="White" Click="btnUpdate_Click" RenderTransformOrigin="0.512,0.923"
      >
             <Button.Style>
                 <Style TargetType="Button">
@@ -90,10 +93,10 @@
             </Button.Template>
         </Button>
         <Button x:Name="btnInsert"
-    Content="Insert"
+    Content="Thêm mới"
     HorizontalAlignment="Left"
-    Margin="580,0,0,0"
-    VerticalAlignment="Center"
+    Margin="583,186,0,0"
+    VerticalAlignment="Top"
     Height="53"
     Width="164"
     Background="#FFA4CCD1"
@@ -140,47 +143,41 @@
      DataContext="{Binding ElementName=lvCus, Path=SelectedItem}" />
         <TextBox  x:Name="tbName"
         HorizontalAlignment="Left"
-        Margin="554,70,0,0"
+        Margin="632,70,0,0"
         TextWrapping="Wrap"
         VerticalAlignment="Top"
-        Width="216"
-        Height="28" Background="White" TextChanged="tbName_TextChanged" />
+        Width="138"
+        Height="28" Background="White"/>
         <TextBox  x:Name="tbPrice"
         HorizontalAlignment="Left"
-        Margin="554,128,0,0"
+        Margin="632,115,0,0"
         TextWrapping="Wrap"
         VerticalAlignment="Top"
-        Width="216"
+        Width="138"
         Height="28" Background="White" />
         <TextBox  x:Name="tbId"
         HorizontalAlignment="Left"
-        Margin="24,253,0,0"
+        Margin="110,254,0,0"
         TextWrapping="Wrap"
         VerticalAlignment="Top"
         Width="216"
         Height="28" Background="White" IsReadOnly="True" />
         <TextBox  x:Name="tbNameUpdate"
         HorizontalAlignment="Left"
-        Margin="24,299,0,0"
+        Margin="110,298,0,0"
         TextWrapping="Wrap"
         VerticalAlignment="Top"
         Width="216"
         Height="28" Background="White" />
         <TextBox  x:Name="tbPriceUpdate"
         HorizontalAlignment="Left"
-        Margin="24,344,0,0"
+        Margin="110,343,0,0"
         TextWrapping="Wrap"
         VerticalAlignment="Top"
         Width="216"
         Height="28" Background="White" />
-        <TextBox  x:Name="tbStatus"
-        HorizontalAlignment="Left"
-        Margin="24,396,0,0"
-        TextWrapping="Wrap"
-        VerticalAlignment="Top"
-        Width="216"
-        Height="28" Background="White" />
-        <Button x:Name="btnBack" Content="Trở về" HorizontalAlignment="Left" Margin="562,392,0,0" VerticalAlignment="Top" Height="44" Width="306" Background="#FF6F2C2C" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnInsert_Click">
+        
+        <Button x:Name="btnBack" Content="Quay lại" HorizontalAlignment="Left" Margin="557,329,0,0" VerticalAlignment="Top" Height="44" Width="306" FontFamily="Kozuka Mincho Pr6N B" Foreground="Black" BorderBrush="White" RenderTransformOrigin="0.5,0.5" Click="btnBack_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -204,5 +201,10 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="24,255,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tên phòng" HorizontalAlignment="Left" Margin="24,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="Giá" HorizontalAlignment="Left" Margin="24,345,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tên phòng" HorizontalAlignment="Left" Margin="550,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Giá" HorizontalAlignment="Left" Margin="550,117,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

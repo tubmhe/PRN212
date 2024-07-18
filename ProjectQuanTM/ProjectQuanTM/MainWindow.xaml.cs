@@ -10,6 +10,8 @@ namespace ProjectQuanTM
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly RentRepository rentRepository = new RentRepository();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -17,8 +19,7 @@ namespace ProjectQuanTM
         }
         private void LoadRent()
         {
-            var rent = new RentRepository();
-            var rents = rent.GetRents();
+            var rents = rentRepository.GetRents();
             listRent.ItemsSource = rents;
         }
 
@@ -29,16 +30,35 @@ namespace ProjectQuanTM
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
+            if (listRent.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn một hợp đồng trong danh sách");
+                return;
+            }
             var r = listRent.SelectedItem as RentViewModel;
-            var rent = new RentRepository();
-            rent.DeleteRent(r.RentId);
+            var result = rentRepository.DeleteRent(r.RentId);
             LoadRent();
+            MessageBox.Show(result);
         }
 
         private void btnInsert_Click(object sender, RoutedEventArgs e)
         {
             AddRent addRent = new AddRent();
             addRent.Show();
+            this.Close();
+        }
+
+        private void btnRoom_Click(object sender, RoutedEventArgs e)
+        {
+            RoomManager roomManager = new RoomManager();
+            roomManager.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ServiceManager serviceManager = new ServiceManager();
+            serviceManager.Show();
             this.Close();
         }
     }

@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\repository\\service\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\service\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\servicemanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\servicemanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\servicemanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\servicemanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\repository\\rent\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\rent\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\repository\\room\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\room\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\repository\\rent\\irentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\rent\\irentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\viewmodels\\rentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\viewmodels\\rentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\addrent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\projectquantm\\addrent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5338888A-3905-4F00-B6B0-E07DF46A9FFD}|ProjectQuanTM\\ProjectQuanTM.csproj|solutionrelative:projectquantm\\addrent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|c:\\users\\tu\\onedrive\\desktop\\prn212\\projectquantm\\dataaccess\\repository\\service\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C22CED23-3BB8-4ADA-9B9F-4126EF69AE65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\service\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,77 +66,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceManager.xaml",
-              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml",
-              "RelativeDocumentMoniker": "ProjectQuanTM\\ServiceManager.xaml",
-              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml",
-              "RelativeToolTip": "ProjectQuanTM\\ServiceManager.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-17T17:44:42.81Z",
+              "DocumentIndex": 4,
+              "Title": "IRentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\IRentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\Rent\\IRentRepository.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\IRentRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\Rent\\IRentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T04:12:49.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "RentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\RentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\Rent\\RentRepository.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\RentRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\Rent\\RentRepository.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAASwGEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T04:12:08.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RoomManager.xaml",
               "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\RoomManager.xaml",
               "RelativeDocumentMoniker": "ProjectQuanTM\\RoomManager.xaml",
               "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\RoomManager.xaml",
               "RelativeToolTip": "ProjectQuanTM\\RoomManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-17T17:44:18.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\RentRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repository\\Rent\\RentRepository.cs",
-              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Rent\\RentRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repository\\Rent\\RentRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:38:54.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Room\\RoomRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repository\\Room\\RoomRepository.cs",
-              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Room\\RoomRepository.cs",
-              "RelativeToolTip": "DataAccess\\Repository\\Room\\RoomRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:41:25.87Z",
+              "WhenOpened": "2024-07-18T04:06:34.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RentViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\ViewModels\\RentViewModel.cs",
-              "RelativeDocumentMoniker": "DataAccess\\ViewModels\\RentViewModel.cs",
-              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\ViewModels\\RentViewModel.cs",
-              "RelativeToolTip": "DataAccess\\ViewModels\\RentViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:41:19.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AddRent.xaml",
               "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml",
               "RelativeDocumentMoniker": "ProjectQuanTM\\AddRent.xaml",
               "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml",
               "RelativeToolTip": "ProjectQuanTM\\AddRent.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-17T17:37:51.23Z",
+              "WhenOpened": "2024-07-18T04:06:28.007Z",
               "EditorCaption": ""
             },
             {
@@ -143,22 +122,59 @@
               "RelativeDocumentMoniker": "ProjectQuanTM\\AddRent.xaml.cs",
               "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\AddRent.xaml.cs",
               "RelativeToolTip": "ProjectQuanTM\\AddRent.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAwwBoAAAAMAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:32:49.318Z",
+              "WhenOpened": "2024-07-18T04:00:55.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ProjectQuanTM\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ProjectQuanTM\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAEwCcAAAAMAAAA",
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Service\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\Service\\ServiceRepository.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Service\\ServiceRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\Service\\ServiceRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAswBsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:33:01.046Z",
+              "WhenOpened": "2024-07-17T21:09:26.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IServiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Service\\IServiceRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\Service\\IServiceRepository.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\DataAccess\\Repository\\Service\\IServiceRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\Service\\IServiceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T21:08:57.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceManager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml.cs",
+              "RelativeDocumentMoniker": "ProjectQuanTM\\ServiceManager.xaml.cs",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml.cs",
+              "RelativeToolTip": "ProjectQuanTM\\ServiceManager.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T20:50:38.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceManager.xaml",
+              "DocumentMoniker": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml",
+              "RelativeDocumentMoniker": "ProjectQuanTM\\ServiceManager.xaml",
+              "ToolTip": "C:\\Users\\tu\\OneDrive\\Desktop\\PRN212\\ProjectQuanTM\\ProjectQuanTM\\ServiceManager.xaml",
+              "RelativeToolTip": "ProjectQuanTM\\ServiceManager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T20:50:36.211Z",
               "EditorCaption": ""
             }
           ]
